@@ -1,6 +1,9 @@
 /*global define */
 define([], function () {
     'use strict';
-
-    return '\'Allo \'Allo!';
+    $(function()
+   	{
+    	alert("Bienvenido a Simon Says");
+   	})
+    return 1;
 });
