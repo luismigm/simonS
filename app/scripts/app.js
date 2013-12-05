@@ -1,9 +1,9 @@
 /*global define */
 define([], function () {
     'use strict';
-    $(function()
+    $(document).ready(function()
    	{
     	alert("Bienvenido a Simon Says");
    	})
-    return 1;
+    return 0;
 });
