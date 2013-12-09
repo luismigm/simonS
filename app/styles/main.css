@@ -4,15 +4,15 @@ body {
     color: #333;
 }
 
-.hero-unit {
+.container {
     margin: 50px auto 0 auto;
-    width: 300px;
+    width: 450px;
     font-size: 18px;
     font-weight: 200;
     line-height: 30px;
     background-color: #eee;
     border-radius: 6px;
-    padding: 60px;
+    padding: 50px;
 }
 
 .hero-unit h1 {
@@ -26,4 +26,52 @@ body {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+.boton {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+
+}
+#rojo {
+    background-color: red;
+    float: top;
+    display: inline-block;
+    margin: 10px;
+     border:1px solid #000; 
+     border-radius: 200px 0 0 0;
+     -moz-border-radius: 200px 0 0 0;
+     -webkit-border-radius: 200px 0 0 0;
+}
+
+#verde {
+    float: top;
+    display: inline-block;
+    background-color: green;
+    margin: 10px;
+     border:1px solid #000; 
+     border-radius: 0 200px 0 0;
+     -moz-border-radius: 0 200px 0 0;
+     -webkit-border-radius: 0 200px 0 0;
+}
+#amarillo{
+    background-color: yellow;
+    float: bottom;
+    display: inline-block;
+    margin: 10px;
+     border:1px solid #000; 
+     border-radius: 0 0 200px 0;
+     -moz-border-radius: 0 0 200px 0;
+     -webkit-border-radius: 0 0 200px 0;
+}
+#azul{
+    background-color: blue;
+    float: bottom;
+    display: inline-block;
+    margin: 10px;
+     border:1px solid #000; 
+     border-radius: 0 0 0 200px;
+     -moz-border-radius: 0 0 0 200px;
+     -webkit-border-radius: 0 0 0 200px;
+
 }
