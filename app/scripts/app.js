@@ -43,6 +43,29 @@ define([], function () {
 		    	$(this).css("background-color","yellow");
 
 		   	});
+    	var arrayUser=new Array();
+
+
+    	$(".boton").click(function()
+    		{
+		    	var id =$ (this).attr("id");
+		    	switch (id)
+		    	{
+		    		case "azul":arrayUser.push(id);
+		    			break;
+		    		case "amarillo":arrayUser.push(id);
+		    			break;
+		    		case "verde":arrayUser.push(id);
+		    			break;
+		    		case "rojo":arrayUser.push(id);
+		    			break;
+		    		default: alert("error"); 
+		    	}
+		    	for (var i=0; i < arrayUser.length ; i++)
+		    	{ 
+		    		console.log(arrayUser[i]);
+		    	}
+		   	});
    	});
     return 0;
 });

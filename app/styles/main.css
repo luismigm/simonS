@@ -12,14 +12,19 @@ width: 100%;
 height: 100%;
 }
 
-.tablegame {
-     margin: 50px auto 50px auto;
+#title {
+    margin: 20px auto 0 auto;
+    width: 700px;
+}
+
+#tablegame {
+    margin: 20px auto 0 auto;
     width: 700px;
     height: 700px;
     font-size: 18px;
     font-weight: 200;
     line-height: 30px;
-    background-color: #eee;
+    background-color: #cedce0;
     border-radius: 6px;
     padding: 50px;
 }
@@ -34,7 +39,7 @@ height: 100%;
     float: top;
     display: inline-block;
     background-color: red;
-    margin: 20px;
+    margin: 15px;
      border: 4px solid #000; 
      border-radius: 300px 0 0 0;
      -moz-border-radius: 300px 0 0 0;
@@ -45,7 +50,7 @@ height: 100%;
     float: top;
     background-color: green;
     display: inline-block;
-    margin: 20px;
+    margin: 15px;
      border:4px solid #000; 
      border-radius: 0 300px 0 0;
      -moz-border-radius: 0 300px 0 0;
@@ -55,7 +60,7 @@ height: 100%;
     float: bottom;
     display: inline-block;
     background-color: yellow;
-    margin: 20px;
+    margin: 15px;
      border:4px solid #000; 
      border-radius: 0 0 300px 0;
      -moz-border-radius: 0 0 300px 0;
@@ -65,10 +70,17 @@ height: 100%;
     float: bottom;
     background-color: blue;
     display: inline-block;
-    margin: 20px;
+    margin: 15px;
      border:4px solid #000; 
      border-radius: 0 0 0 300px;
      -moz-border-radius: 0 0 0 300px;
      -webkit-border-radius: 0 0 0 300px;
 
+}
+
+.footer {
+    clear: both;
+    margin: 0 auto 10px; auto;
+    float: right;
+    width: 400px;
 }
