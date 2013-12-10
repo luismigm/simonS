@@ -3,46 +3,6 @@ define([], function () {
     'use strict';
     $(document).ready(function()
    	{
-    	$("#rojo").hover(function()
-    		{
-		    	$(this).css("background-color","#f84f32");
-
-		   	});
-    	$("#rojo").mouseleave(function()
-    		{
-		    	$(this).css("background-color","red");
-
-		   	});
-    	$("#verde").hover(function()
-    		{
-		    	$(this).css("background-color","#91e842");
-
-		   	});
-    	$("#verde").mouseleave(function()
-    		{
-		    	$(this).css("background-color","green");
-
-		   	});
-    	$("#azul").hover(function()
-    		{
-		    	$(this).css("background-color","#207ce5");
-
-		   	});
-    	$("#azul").mouseleave(function()
-    		{
-		    	$(this).css("background-color","blue");
-
-		   	});
-    	$("#amarillo").hover(function()
-    		{
-		    	$(this).css("background-color","#feb645");
-
-		   	});
-    	$("#amarillo").mouseleave(function()
-    		{
-		    	$(this).css("background-color","yellow");
-
-		   	});
     	var arrayUser=new Array();
 
 
@@ -52,12 +12,18 @@ define([], function () {
 		    	switch (id)
 		    	{
 		    		case "azul":arrayUser.push(id);
+		    			$(this).css("background-color","#207ce5");
+		    			$(this).delay(1000).css("background-color","blue");
+
 		    			break;
 		    		case "amarillo":arrayUser.push(id);
+		    			$(this).css("background-color","#feb645");
 		    			break;
 		    		case "verde":arrayUser.push(id);
+		    			$(this).css("background-color","#91e842");
 		    			break;
 		    		case "rojo":arrayUser.push(id);
+		    			$(this).css("background-color","#f84f32");
 		    			break;
 		    		default: alert("error"); 
 		    	}
