@@ -1,6 +1,18 @@
 /*global define */
 define([], function () {
     'use strict';
+
+    var highlight = function (boton, color)
+    {
+    	var oldcolor = boton.css("background-color");
+    	boton.css("background-color" , color);
+    	setTimeout( function()
+    	{
+    		boton.css("background-color", oldcolor);
+    	},200
+    		);
+    }
+
     $(document).ready(function()
    	{
     	var arrayUser=new Array();
@@ -12,18 +24,16 @@ define([], function () {
 		    	switch (id)
 		    	{
 		    		case "azul":arrayUser.push(id);
-		    			$(this).css("background-color","#207ce5");
-		    			$(this).delay(1000).css("background-color","blue");
-
+		    			highlight ($(this), "#207ce5")
 		    			break;
 		    		case "amarillo":arrayUser.push(id);
-		    			$(this).css("background-color","#feb645");
+		    			highlight ($(this), "#feb645")
 		    			break;
 		    		case "verde":arrayUser.push(id);
-		    			$(this).css("background-color","#91e842");
+		    			highlight ($(this), "#91e842")
 		    			break;
 		    		case "rojo":arrayUser.push(id);
-		    			$(this).css("background-color","#f84f32");
+		    			highlight ($(this), "#f84f32")
 		    			break;
 		    		default: alert("error"); 
 		    	}

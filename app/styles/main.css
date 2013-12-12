@@ -80,7 +80,7 @@ height: 100%;
 
 .footer {
     clear: both;
-    margin: 0 auto 10px; auto;
+    margin: 0 auto 10px auto;
     float: right;
     width: 400px;
 }
