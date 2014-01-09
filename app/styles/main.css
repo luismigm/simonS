@@ -27,6 +27,7 @@ height: 100%;
     background-color: #cedce0;
     border-radius: 6px;
     padding: 50px;
+    position: relative;
 }
 
 .boton {
@@ -78,7 +79,7 @@ height: 100%;
 
 }
 
-#start{
+.circle{
     margin: 0 auto 0 auto;
     display: inline-block;
     width: 100px;
@@ -90,9 +91,22 @@ height: 100%;
     text-align: center;
     background-color: #000;
     position: absolute;
-   
-
 }
+
+#score{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    background-color: #000;
+    position: absolute;
+    right: 55px;
+}
+
 #start:hover {
    background-color: #fff;
    color: black;

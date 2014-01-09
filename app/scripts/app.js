@@ -55,11 +55,13 @@ define([], function () {
                  }
 
                  console.log("Correcto!");
+                 $('#score').text(userClicks.length)
                  return true;
     }
     //finalizacion del juego, reseteamos los arrays y volvemos a mostrar el boton
     var endGame = function() {
         alert("has fallado")
+        $('#score').text("Score "+(userClicks.length-1))
         userClicks.length=0;
         computerSequence.length=0;
         $('#start').css('background-color', '#000').fadeIn()
@@ -71,6 +73,7 @@ define([], function () {
         initialize()
 
         $('#start').click(function() {
+            $('#score').text("0");
             $(this).css('color', '#fff').fadeOut()
             setTimeout( function() {
                 generateComputerSequence()
