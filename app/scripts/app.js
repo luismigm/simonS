@@ -58,9 +58,15 @@ define([], function () {
                  $('#score').text(userClicks.length)
                  return true;
     }
-    //finalizacion del juego, reseteamos los arrays y volvemos a mostrar el boton
+    //finalizacion del juego, reseteamos los arrays e inicializamos los css originales
     var endGame = function() {
-        alert("has fallado")
+        for(var i = 0; i < buttonList.length; i++)
+                 {
+                      $("#"+buttonList[i]).css("opacity", 0.3)
+                 }
+        $('#fail').html("HAS PERDIDO")
+        $('#fail').fadeIn(2000)
+        $('#fail').fadeOut(2000)
         $('#score').text("Score "+(userClicks.length-1))
         userClicks.length=0;
         computerSequence.length=0;
@@ -72,7 +78,11 @@ define([], function () {
     $(document).ready(function() {
         initialize()
 
-        $('#start').click(function() {
+        $('#start').click(function() {//quitamos la opacidad a los botones
+          for(var i = 0; i < buttonList.length; i++)
+                 {
+                      $("#"+buttonList[i]).css("opacity", 1)
+                 }
             $('#score').text("0");
             $(this).css('color', '#fff').fadeOut()
             setTimeout( function() {
@@ -100,11 +110,8 @@ define([], function () {
                   else
                   {
                     endGame()
-                  }
-                    
+                  }      
                 }
-
-
             }
         })
     })

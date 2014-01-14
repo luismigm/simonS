@@ -34,6 +34,7 @@ height: 100%;
     float:left;
     width: 300px;
     height: 300px;
+    opacity: 0.3;
 
 }
 #rojo {
@@ -94,16 +95,6 @@ height: 100%;
 }
 
 #score{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    font-size: 20px;
-    color: white;
-    line-height: 100px;
-    text-align: center;
-    background-color: #000;
-    position: absolute;
     right: 55px;
 }
 
@@ -112,6 +103,17 @@ height: 100%;
    color: black;
 }
 
+#fail{
+    z-index: 10;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 322px;
+    font-family: verdana;
+    color: black;
+    font-size: 100px;
+    display: none;
+
+}
 
 
 .footer {
