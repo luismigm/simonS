@@ -67,7 +67,7 @@ define([], function () {
         $('#fail').html("HAS PERDIDO")
         $('#fail').fadeIn(2000)
         $('#fail').fadeOut(2000)
-        $('#score').text("Score "+(userClicks.length-1))
+        $('#score').html("Score "+(userClicks.length-1))
         userClicks.length=0;
         computerSequence.length=0;
         $('#start').css('background-color', '#000').fadeIn()

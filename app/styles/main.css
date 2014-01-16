@@ -35,7 +35,7 @@ height: 100%;
     width: 300px;
     height: 300px;
     opacity: 0.3;
-
+    cursor: pointer;
 }
 #rojo {
     float: top;
@@ -98,6 +98,10 @@ height: 100%;
     right: 55px;
 }
 
+#start
+{
+    cursor: pointer;
+}
 #start:hover {
    background-color: #fff;
    color: black;
